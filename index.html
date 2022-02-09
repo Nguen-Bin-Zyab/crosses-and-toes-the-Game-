@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Metanit.com</title>
+    <style>
+        #header{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: italic;
+            color:rgb(163, 163, 35);
+        }
+        #table{
+            width: 250px;
+            margin: auto;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-collapse: collapse;
+            margin-top: 15%;
+        }
+        #table td{
+            border: 2px solid #000;
+            height: 80px;
+            width: 80px;
+            font-style: normal;
+            text-align: center;
+        }
+        .dropzone{
+            width: 70px;
+            height: 70px;
+        }
+        .krestik, img{
+            width: 70px;
+            height: 70px;
+        }
+        .example-dropzone div{
+            border: 1px solid #000;
+            width: 300px;
+            height: 100px;
+            margin: auto;
+        }
+        .example-dropzone{
+            width: 300px;
+            margin: auto;
+            height: 400px;
+        }
+        
+        .example-parent {
+            display: flex;
+            font-family: sans-serif;
+            font-weight: bold;
+            float: left;
+            width: 90px;
+            }
+
+        .example-origin {
+            flex-basis: 100%;
+            flex-grow: 1;
+            padding: 10px;
+            
+            }
+
+        .example-draggable {
+            font-weight: normal;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding: 10px;
+            }
+
+        .example-dropzone {
+            flex-basis: 100%;
+            flex-grow: 1;
+            padding: 10px;
+            }
+          .example-dropzone div{
+            border: 1px solid #000;
+          }
+          td{
+              width: 80px;
+              height: 80px;
+              border: 1px solid #000;
+              text-align: center;
+          }
+          table{
+              border-collapse: collapse;
+          }
+         .example{
+             width: 70px;
+             height: 70px;
+             border: 1px solid #000;
+         }
+         
+    </style>
+</head>
+<body>
+    <h2 id="header"></h2>
+ 
+    <div class="example-dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+
+      
+       
+    <table>
+        <tr>
+            <td id="111"></td>
+            <td id="222"></td>
+            <td id="333"></td>
+        </tr>
+        <tr>
+            <td id="444"></td>
+            <td id="555"></td>
+            <td id="666"></td>
+        </tr>
+        <tr>
+            <td id="777"></td>
+            <td id="888"></td>
+            <td id="999"></td>
+        </tr>
+    </table>
+          
+          
+    </div>
+
+
+    <div class="example-parent">
+    <div class="example-origin">
+    <div id="draggable-1" class="example" draggable="true" ondragstart="onDragStart(event);">
+    <img class="dropzone" id="nolik" src="nolik.png" alt="">
+    </div>
+
+    
+    </div>
+    
+    </div>
+
+    <div class="example-parent">
+    <div class="example-origin">
+    <div id="draggable-2" class="example" draggable="true" ondragstart="onDragStart(event);">
+    <img class="dropzone" id="krestik" src="krest.png" alt="">
+    </div>
+    
+    </div>
+    </div>
+
+    <div class="example-parent">
+    <div class="example-origin">
+    <div id="draggable-4" class="example" draggable="true" ondragstart="onDragStart(event);">
+         <img class="dropzone" id="nolik2" src="nolik.png" alt="">
+    </div>
+    </div>
+    </div>
+
+    <div class="example-parent">
+    <div class="example-origin">
+    <div id="draggable-3" class="example" draggable="true" ondragstart="onDragStart(event);">
+       <img class="dropzone" id="krestik2" src="krest.png" alt="">
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="example-parent">
+        <div class="example-origin">
+        <div id="draggable-5" class="example" draggable="true" ondragstart="onDragStart(event);">
+        <img class="dropzone" id="nolik3" src="nolik.png" alt="">
+        </div>
+    
+        
+        </div>
+        
+        </div>
+    
+        <div class="example-parent">
+        <div class="example-origin">
+        <div id="draggable-6" class="example" draggable="true" ondragstart="onDragStart(event);">
+        <img class="dropzone" id="krestik3" src="krest.png" alt="">
+        </div>
+        
+        </div>
+        </div>
+    
+        <div class="example-parent">
+        <div class="example-origin">
+        <div id="draggable-7" class="example" draggable="true" ondragstart="onDragStart(event);">
+            <img class="dropzone" id="nolik4" src="nolik.png" alt="">
+        </div>
+        </div>
+        </div>
+    
+        <div class="example-parent">
+        <div class="example-origin">
+        <div id="draggable-8" class="example" draggable="true" ondragstart="onDragStart(event);">
+      
+            <img class="dropzone" id="krestik4" src="krest.png" alt="">
+        </div>
+        </div>
+        </div>
+
+
+        <div class="example-parent">
+            <div class="example-origin">
+            <div id="draggable-9" class="example" draggable="true" ondragstart="onDragStart(event);">
+                <img class="dropzone" id="nolik5" src="nolik.png" alt="">
+            </div>
+            </div>
+            </div>
+        
+            <div class="example-parent">
+            <div class="example-origin">
+            <div id="draggable-10" class="example" draggable="true" ondragstart="onDragStart(event);">
+             
+                <img class="dropzone" id="krestik5" src="krest.png" alt="">
+            </div>
+            </div>
+            </div>
+    <script src="app.js"></script>
+   
+</body>
+</html>
+
+
+
+
+  
+  
+
+
+
+
+ 
+
+
